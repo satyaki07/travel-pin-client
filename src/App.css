@@ -1,3 +1,12 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 .card {
     width: 250px;
     height: 250px;
@@ -12,6 +21,7 @@ label {
     border-bottom: 0.5px solid tomato;
     font-size: 13px;
     margin: 3px 0;
+    z-index: 2;
 }
 
 .desc {
@@ -78,8 +88,9 @@ textarea::placeholder {
     background-color: slateblue;
 }
 
-.buttons, .logout {
+.buttons,
+.logout {
     position: absolute;
     right: 10px;
-    top: 10px
+    top: 10px;
 }
