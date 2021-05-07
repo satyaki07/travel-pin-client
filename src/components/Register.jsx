@@ -4,6 +4,8 @@ import { Cancel, Room } from "@material-ui/icons";
 import axios from "axios";
 
 export default function Register({ setShowRegister }) {
+  const url = "https://travel-pin-app.herokuapp.com/api";
+
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
 
@@ -21,7 +23,7 @@ export default function Register({ setShowRegister }) {
     };
 
     try {
-      await axios.post("/users/register", newUser);
+      await axios.post(`${url}/users/register`, newUser);
       setError(false);
       setSuccess(true);
     } catch (error) {

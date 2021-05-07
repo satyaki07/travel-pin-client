@@ -26,10 +26,12 @@ function App() {
     zoom: 4,
   });
 
+  const url = "https://travel-pin-app.herokuapp.com/api";
+
   useEffect(() => {
     const getPins = async () => {
       try {
-        const res = await axios.get("/pins");
+        const res = await axios.get(`${url}/pins`);
         setPins(res.data);
       } catch (error) {
         console.log(error);
