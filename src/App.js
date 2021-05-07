@@ -68,7 +68,7 @@ function App() {
     };
 
     try {
-      const res = await axios.post("/pins", newPin);
+      const res = await axios.post(`${url}/pins`, newPin);
       setPins([...pins, res.data]);
       setNewPlace(null);
     } catch (error) {
