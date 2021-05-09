@@ -1,3 +1,46 @@
+<h1 align="center">
+Travel Pin
+
+## 💻 Project
+
+
+
+- A MERN stack application where you can pin any location on the map, and share your reviews.
+
+<p>&nbsp;&nbsp;</p>
+
+---
+
+## 🔥 Check it out!
+
+</br>
+
+- [Demo](https://travel-pin.netlify.app/)
+<p align="center">
+  <img src="src/images/demo-1.gif" />
+</p>
+
+<p align="center">
+  <img src="src/images/demo-2.gif" />
+</p>
+
+<p>&nbsp;&nbsp;</p>
+
+## **Technologies used**
+- HTML5
+- CSS3
+- React
+- React Hooks
+- react-map-gl
+- Mapbox API
+- Node
+- Express
+- MongoDB
+- bcrypt (for authentication)
+
+---
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
