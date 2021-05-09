@@ -184,7 +184,9 @@ function App() {
                     onClose={() => setNewPlace(null)}
                   >
                     <div>
-                      <h2 style={{color: "slateblue "}}>Please Register / Login</h2>
+                      <h2 style={{ color: "slateblue " }}>
+                        Please Register / Login
+                      </h2>
                     </div>
                   </Popup>
                 ))}
@@ -197,12 +199,21 @@ function App() {
           </button>
         ) : (
           <div className="buttons">
-            <button className="button login" onClick={() => setShowLogin(true)}>
+            <button
+              className="button login"
+              onClick={() => {
+                setShowLogin(true);
+                setShowRegister(false);
+              }}
+            >
               Login
             </button>
             <button
               className="button register"
-              onClick={() => setShowRegister(true)}
+              onClick={() => {
+                setShowRegister(true);
+                setShowLogin(false);
+              }}
             >
               Register
             </button>
